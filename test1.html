@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Isak's Number Game</title>
+<style type="text/css">
+* {
+padding: 0;
+margin: 0;
+}
+h1 {
+display: block;
+margin: 0 auto;
+text-align: center;
+padding: 100px;
+font-size: 50px;
+}
+#background {
+height:  100vh;
+width: 100%;
+margin: 0;
+padding: 0;
+background-color: hsl(60, 100%, 50%);
+}
+
+#buttonContainer {
+
+margin: 0 auto;
+position: static;
+width: 500px;
+top: 50px;
+
+}
+
+#highScoreContainer {
+top: 10px;
+
+position: static;
+width: 500px;
+margin: 150px auto;
+border: 5px solid gray;
+padding: 10px;
+border-radius: 10px;
+background-color: black;
+}
+
+#level {
+color: white;
+background-color: black;
+position: absolute;
+font-size: 30px;
+width: 200px;
+height: 150px; 
+right: 100px;
+top: 100px;
+text-align: center;
+border: 5px solid gray;
+}
+
+#printedHighScore {
+text-align: center;
+color: white;
+}
+
+input[type=button] {
+position: relative;
+text-color: gray;
+width: 150px;
+height: 100px;
+background-color: white;
+border-radius: 25px;
+font: bold;
+font-family: sans-serif;
+box-shadow: 10px 5px 5px gray;
+font-size: 20px;
+text-decoration: bold;
+text-align: center;
+white-space: collapse;
+margin: 20px;
+border: 6px solid black;
+font-weight: 700;
+}
+</style>
+</head>
+<body>
+	<div id="background">
+		<h1>Guess the Number Game</h1>
+		<div><h2 id="level"></h2></div>
+	
+			<div id="buttonContainer">
+				<input type="button" value="start game" onclick="startNumberGame()"> 
+			
+				<input type="button" value="next level              " onclick="nextLevel()"> 
+			</div>
+		<div id="highScoreContainer">
+			<h2 id="printedHighScore"></h2> 
+		</div>
+	
+	</div>
+<script type="text/javascript" src="test1.js"></script>
+</body>
+</html>
